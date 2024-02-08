@@ -31,13 +31,13 @@ h1 {
     margin: 0;
 }
 
-span {
-    background: -webkit-linear-gradient(#009df8, #38b6ff);
+span.teks {
+    background: -webkit-linear-gradient(rgb(0, 157, 248), #38b6ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-h3.card {
+h3.cards {
     font-family: "Poppins", sans-serif;
     font-size: 31px;
     font-weight: var(--fwbold);
@@ -45,9 +45,6 @@ h3.card {
     color: var(--black);
     text-transform: capitalize;
     margin: 0;
-    /* background: -webkit-linear-gradient(#009DF8, #38B6FF);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent; */
 }
 
 h3.teams {
@@ -100,31 +97,31 @@ p.p3 {
     font-style: italic;
 }
 
-.navbar-container {
-    display: flex;
+.navbar {
     width: 100%;
     padding-block: 1rem;
-    margin: 0 auto;
-    padding-inline: 100px;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 999;
-    background-color: var(--white);
 }
 
-.nav-list ul {
-    padding: 0;
-    display: flex;
-    justify-content: center;
+span.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(254, 189, 91)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.nav-list li {
-    list-style-type: none;
+.navbar-toggler {
+    background: linear-gradient(#009df8, #38b6ff);
+    color: #ffffff;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
 }
 
-.nav-list li a {
+.navbar-toggler:hover {
+    border: 3px solid #009df8;
+    background: transparent;
+    color: #009df8;
+}
+
+.collapse li a {
     padding: 0.3rem 0.6rem;
-    text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: var(--fwblack);
@@ -136,7 +133,7 @@ p.p3 {
     transition: all 0.2s ease-in-out;
 }
 
-.nav-list li a:hover {
+.collapse li a:hover {
     background: -webkit-linear-gradient(#003d60, #0077c1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -318,10 +315,23 @@ button.card-button:hover {
     max-width: 337px;
 }
 
+.team-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 .team-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.team-border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .border {
@@ -372,7 +382,6 @@ footer {
     gap: 22px;
     width: 100%;
     padding-inline: 100px;
-    /* z-index: 999; */
     border-radius: 50px 50px 0px 0px;
     z-index: 2;
     margin-top: -13%;
@@ -393,6 +402,7 @@ footer {
     margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .ul-footer li {
@@ -489,66 +499,150 @@ footer {
     line-height: 0;
 }
 
-@media screen and (max-width: 768px) {
-    .navbar-container {
-        padding: 0px 20px 0px 20px;
+@media screen and (max-width: 835px) {
+    .collapse {
+        padding-block: 15px;
     }
-    .logo img {
-        width: 80px;
-    }
-    .nav-list li a {
-        font-size: 10px;
-    }
-    button.nav-button {
-        font-size: 7px;
-        padding: 0.3rem 0.6rem;
+    .collapse li a {
+        margin-block-end: 10px;
     }
     #about {
         width: 100%;
         display: flex;
         flex-direction: column;
-        padding: 0px 50px 0px 50px;
-        padding-block: 50px;
-    }
-    h1 {
-        font-size: 25.8px;
-    }
-    p.p1 {
-        font-size: 12px;
+        padding: 80px 100px 80px 100px;
     }
     .about-deskripsi {
-        margin-block-end: 25px;
+        margin-block-end: 50px;
+        max-width: 100%;
     }
     .img-about img {
         width: 100%;
         border-radius: 10px;
     }
+    h1 {
+        font-size: 6.7vw;
+    }
     .portfolio {
-        padding: 50px 50px 50px 50px;
+        padding: 80px 100px 80px 100px;
     }
     .portfolio-deskripsi {
-        width: 100%;
+        max-width: 100%;
         margin-block-end: 25px;
     }
     .img-portfolio {
-        flex-direction: column;
+        padding-inline: 0px;
+        margin-block-end: 0px;
+        flex-direction: row;
         width: 100%;
-        padding-inline: 0;
-        margin: 0;
     }
     .card-portfolio {
-        margin-block-end: 35px;
+        margin-block-end: 50px;
+        max-width: 190px;
     }
     .card-portfolio img {
         width: 100%;
     }
-    h3.card {
+    .card-portfolio h3 {
+        margin: 15px 0px 0px 15px;
+    }
+    h3.cards {
+        font-size: 20px;
+        margin-block-start: 10px;
+    }
+    .card-portfolio p {
+        max-width: 100%;
+        margin: 0px 21px 21px 15px;
+        font-size: 10px;
+    }
+    .card-button {
+        font-size: 10px;
+    }
+    .show-portfolio a {
+        font-size: 12px;
+    }
+    #team {
+        padding: 80px 100px 80px 100px;
+        border-bottom-left-radius: 200% 10%;
+        border-bottom-right-radius: 200% 10%;
+    }
+    .team-1 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .team-row {
+        width: 100%;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .team-border {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .border {
+        height: 170px;
+        width: 170px;
+    }
+    .team-deskripsi {
+        max-width: 100%;
+    }
+    p.p3 {
+        font-size: 11px;
+    }
+    .ul-footer li a {
+        font-size: 11px
+    }
+    .ul-footer-1 li a {
+        margin-inline-end: 15px;
+    }
+    .ul-sosmed li a {
+        margin-inline-start: 40px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .logo img {
+        width: 100px;
+    }
+    .collapse li a {
+        font-size: 12px;
+    }
+    button.nav-button {
+        font-size: 12px;
+        padding: 0.3rem 0.6rem;
+    }
+    #about {
+        padding: 50px 50px 50px 50px;
+    }
+    .about-deskripsi {
+        margin-block-end: 25px;
+    }
+    h1 {
+        font-size: 6.8vw;
+    }
+    p.p1 {
+        font-size: 12px;
+    }
+    .portfolio {
+        padding: 50px 50px 50px 50px;
+    }
+    .img-portfolio {
+        padding-inline: 35px;
+        flex-direction: column;
+    }
+    .card-portfolio {
+        margin-block-end: 35px;
+        max-width: 100%;
+    }
+    h3.cards {
         font-size: 25px;
     }
     .card-portfolio p {
-        max-width: 280px;
         line-height: 1.5em;
-        margin: 0px 21px 21px 15px;
     }
     p.p2 {
         font-size: 11px;
@@ -565,19 +659,13 @@ footer {
         border-bottom-left-radius: 1000% 10%;
         border-bottom-right-radius: 1000% 10%;
     }
+    .team-1 {
+        display: flex;
+        flex-direction: column;
+    }
     .team-row {
         flex-direction: column;
         gap: 35px;
-    }
-    .team-border {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .border {
-        height: 200px;
-        width: 200px;
     }
     h3.teams {
         font-size: 16px;
@@ -601,35 +689,155 @@ footer {
     .ft {
         flex-direction: row;
     }
+    .ul-footer,
+    .footer-deskripsi {
+        width: 100%;
+    }
     p.p3 {
-        font-size: 11.9px;
+        font-size: 3vw;
     }
     .ul-footer ul {
         justify-content: space-between;
-        width: 280px;
     }
     .ul-footer li a {
         width: 100%;
         font-size: 10px;
         margin-inline: 0px;
     }
+    .ul-footer-1 {
+        width: 100%;
+    }
     .ul-footer-1 ul {
         justify-content: space-between;
-        width: 280px;
     }
     .ul-footer-1 li a {
-        font-size: 12px;
+        font-size: 10px;
         margin-inline-end: 0;
+    }
+    .ul-sosmed {
+        width: 100%;
     }
     .ul-sosmed ul {
         justify-content: space-between;
-        width: 280px;
     }
     .ul-sosmed li a {
         margin-inline-start: 0;
         font-size: 20px;
     }
     .p-footer {
+        font-size: 3vw;
+        line-height: 1em;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    h1 {
+        font-size: 6.5vw;
+    }
+    .img-portfolio {
+        padding-inline: 100px;
+        gap: 35px;
+        flex-direction: column;
+    }
+    .card-portfolio {
+        margin-block-end: 35px;
+        max-width: 100%;
+    }
+    h3.cards {
+        font-size: 25px;
+    }
+    .card-portfolio p {
+        line-height: 1.5em;
+    }
+    p.p2 {
+        font-size: 11px;
+    }
+    .card-button {
+        font-size: 10px;
+        padding: 0.4rem 0.8rem
+    }
+    .show-portfolio a {
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 427px) {
+    h1 {
+        font-size: 6.7vw;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    h1 {
+        font-size: 6.6vw;
+    }
+}
+
+@media screen and (max-width: 389px) {
+    h1 {
+        font-size: 6.5vw;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    h1 {
+        font-size: 6.4vw;
+    }
+    .img-portfolio {
+        padding-inline: 30px;
+    }
+    h3.cards {
+        font-size: 23px;
+    }
+    p.p2 {
+        font-size: 11px;
+    }
+    .show-portfolio a {
+        font-size: 11px;
+    }
+    p.p3 {
+        font-size: 2.9vw;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    .logo img {
+        width: 90px;
+    }
+    .collapse li a {
+        font-size: 10px;
+        margin-block-end: 10px;
+    }
+    .navbar-toggler {
+        padding: 0.1rem 0.3rem;
+    }
+    button.nav-button {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 6.1vw;
+    }
+    p.p1 {
+        font-size: 11px;
+    }
+    .portfolio {
+        padding: 50px 50px 50px 50px;
+    }
+    .img-portfolio {
+        padding-inline: 15px;
+    }
+    h3.cards {
+        margin-block-start: 5px;
+        font-size: 20px;
+    }
+    .card-button {
+        font-size: 10px;
+    }
+    .footer-img img {
+        width: 90px
+    }
+    .footer-1 button {
+        font-size: 8px;
     }
 }
