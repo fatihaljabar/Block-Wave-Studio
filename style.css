@@ -604,6 +604,37 @@ footer {
     }
 }
 
+@media screen and (max-width: 819px) {
+    h1 {
+        font-size: 6.5vw;
+    }
+    .img-portfolio {
+        padding-inline: 100px;
+        gap: 35px;
+        flex-direction: column;
+    }
+    .card-portfolio {
+        margin-block-end: 35px;
+        max-width: 100%;
+    }
+    h3.cards {
+        font-size: 25px;
+    }
+    .card-portfolio p {
+        line-height: 1.5em;
+    }
+    p.p2 {
+        font-size: 11px;
+    }
+    .card-button {
+        font-size: 10px;
+        padding: 0.4rem 0.8rem
+    }
+    .show-portfolio a {
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 430px) {
     .logo img {
         width: 100px;
@@ -728,37 +759,6 @@ footer {
         font-size: 3vw;
         line-height: 1em;
         width: 100%;
-    }
-}
-
-@media screen and (max-width: 819px) {
-    h1 {
-        font-size: 6.5vw;
-    }
-    .img-portfolio {
-        padding-inline: 100px;
-        gap: 35px;
-        flex-direction: column;
-    }
-    .card-portfolio {
-        margin-block-end: 35px;
-        max-width: 100%;
-    }
-    h3.cards {
-        font-size: 25px;
-    }
-    .card-portfolio p {
-        line-height: 1.5em;
-    }
-    p.p2 {
-        font-size: 11px;
-    }
-    .card-button {
-        font-size: 10px;
-        padding: 0.4rem 0.8rem
-    }
-    .show-portfolio a {
-        font-size: 12px;
     }
 }
 
