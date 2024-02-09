@@ -201,6 +201,7 @@ main #home {
 
 .portfolio {
     padding-block: 80px;
+    padding-inline: 100px;
     display: flex;
     flex-direction: column;
     background-color: var(--lightgrey);
@@ -218,7 +219,6 @@ main #home {
     flex: 1;
     display: flex;
     width: 100%;
-    padding-inline: 100px;
     margin: 0 auto;
     justify-content: space-between;
     margin-block-end: 60px;
@@ -244,7 +244,7 @@ main #home {
 .card-portfolio p {
     max-width: 280px;
     line-height: 1.2em;
-    margin: 0px 0px 21px 15px;
+    margin: 0px 15px 21px 15px;
 }
 
 .card-portfolio h3 {
@@ -324,7 +324,10 @@ button.card-button:hover {
 .team-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 60px 110px;
+    justify-content: space-evenly;
 }
 
 .team-border {
@@ -499,108 +502,169 @@ footer {
     line-height: 0;
 }
 
-@media screen and (max-width: 835px) {
-    .collapse {
-        padding-block: 15px;
+@media screen and (max-width: 1150px) {
+    .about-deskripsi {
+        max-width: 348px;
     }
-    .collapse li a {
-        margin-block-end: 10px;
+    .img-about {
+        max-width: 500px;
     }
-    #about {
+    .img-about img {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 80px 100px 80px 100px;
+    }
+    .card-portfolio {
+        max-width: 250px;
+    }
+    .card-portfolio img {
+        width: 100%;
+    }
+    h3.cards {
+        font-size: 29px;
+    }
+    p.p2 {
+        font-size: 12px;
+    }
+    .card-button {
+        font-size: 11px;
+    }
+    .show-portfolio a {
+        font-size: 14px;
+    }
+    .team-row {
+        gap: 60px 60px;
+    }
+    .border {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .navbar-collapse {
+        margin-block: 15px;
+    }
+    .navbar-nav {
+        gap: 10px;
     }
     .about-deskripsi {
-        margin-block-end: 50px;
-        max-width: 100%;
+        max-width: 280px;
+    }
+    .img-about {
+        max-width: 370px;
     }
     .img-about img {
         width: 100%;
         border-radius: 10px;
     }
     h1 {
-        font-size: 6.7vw;
+        font-size: 2.8vw;
     }
-    .portfolio {
-        padding: 80px 100px 80px 100px;
-    }
-    .portfolio-deskripsi {
-        max-width: 100%;
-        margin-block-end: 25px;
-    }
-    .img-portfolio {
-        padding-inline: 0px;
-        margin-block-end: 0px;
-        flex-direction: row;
-        width: 100%;
+    p.p2 {
+        font-size: 8px;
     }
     .card-portfolio {
-        margin-block-end: 50px;
-        max-width: 190px;
+        max-width: 200px;
     }
     .card-portfolio img {
         width: 100%;
     }
-    .card-portfolio h3 {
-        margin: 15px 0px 0px 15px;
-    }
     h3.cards {
-        font-size: 20px;
-        margin-block-start: 10px;
+        font-size: 25px;
     }
-    .card-portfolio p {
-        max-width: 100%;
-        margin: 0px 21px 21px 15px;
-        font-size: 10px;
+    p.p2 {
+        font-size: 9px;
     }
     .card-button {
-        font-size: 10px;
+        font-size: 9px;
     }
     .show-portfolio a {
         font-size: 12px;
     }
     #team {
-        padding: 80px 100px 80px 100px;
-        border-bottom-left-radius: 200% 10%;
-        border-bottom-right-radius: 200% 10%;
-    }
-    .team-1 {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-between;
+        border-bottom-left-radius: 120% 10%;
+        border-bottom-right-radius: 120% 10%;
     }
     .team-row {
-        width: 100%;
-        flex-direction: column;
-        gap: 50px;
-    }
-    .team-border {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        gap: 60px 40px;
     }
     .border {
-        height: 170px;
-        width: 170px;
+        height: 180px;
+        width: 180px;
+    }
+    .team-border {
+        max-width: 200px;
+    }
+    .ul-sosmed li a {
+        font-size: 25px;
+        margin-inline-start: 45px;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    #about {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-deskripsi {
+        margin-block-end: 50px;
+        max-width: 100%;
+    }
+    .img-about {
+        max-width: 100%;
+    }
+    .img-about img {
+        width: 100%;
+        border-radius: 30px;
+    }
+    h1 {
+        font-size: 6.7vw;
+        line-height: 1.5em;
+    }
+    .card-portfolio {
+        max-width: 195px;
+    }
+    .card-portfolio img {
+        width: 100%;
+    }
+    .portfolio-deskripsi {
+        max-width: 100%;
+        margin-block-end: 25px;
+    }
+    h3.cards {
+        font-size: 24px;
+        margin-block-start: 10px;
+    }
+    .card-portfolio p {
+        max-width: 100%;
+        margin: 0px 15px px 15px;
+        font-size: 9px;
+    }
+    .card-button {
+        font-size: 9px;
+    }
+    .show-portfolio a {
+        font-size: 11px;
+    }
+    #team {
+        border-bottom-left-radius: 200% 10%;
+        border-bottom-right-radius: 200% 10%;
     }
     .team-deskripsi {
         max-width: 100%;
     }
-    p.p3 {
-        font-size: 11px;
-    }
-    .ul-footer li a {
-        font-size: 11px
+    .team-row {
+        width: 100%;
+        flex-direction: row;
+        gap: 60px 30px;
     }
     .ul-footer-1 li a {
-        margin-inline-end: 15px;
+        margin-inline-end: 2rem;
+        font-size: 14px;
     }
     .ul-sosmed li a {
-        margin-inline-start: 40px;
+        font-size: 25px;
+        margin-inline-start: 45px;
     }
 }
 
@@ -608,29 +672,40 @@ footer {
     h1 {
         font-size: 6.5vw;
     }
+    .card-portfolio {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .card-portfolio img {
+        width: 100%;
+    }
     .img-portfolio {
-        padding-inline: 100px;
         gap: 35px;
         flex-direction: column;
-    }
-    .card-portfolio {
         margin-block-end: 35px;
-        max-width: 100%;
     }
     h3.cards {
-        font-size: 25px;
+        font-size: 29px;
     }
     .card-portfolio p {
         line-height: 1.5em;
     }
     p.p2 {
-        font-size: 11px;
+        font-size: 12px;
     }
     .card-button {
-        font-size: 10px;
-        padding: 0.4rem 0.8rem
+        font-size: 12px;
     }
     .show-portfolio a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    p.p3 {
+        font-size: 13px;
+    }
+    .ul-footer li a {
         font-size: 12px;
     }
 }
@@ -642,6 +717,9 @@ footer {
     .collapse li a {
         font-size: 12px;
     }
+    .navbar-toggler {
+        padding: 0.1rem 0.3rem;
+    }
     button.nav-button {
         font-size: 12px;
         padding: 0.3rem 0.6rem;
@@ -649,11 +727,14 @@ footer {
     #about {
         padding: 50px 50px 50px 50px;
     }
+    h1 {
+        font-size: 6.8vw;
+    }
     .about-deskripsi {
         margin-block-end: 25px;
     }
-    h1 {
-        font-size: 6.8vw;
+    .img-about img {
+        border-radius: 10px;
     }
     p.p1 {
         font-size: 12px;
@@ -661,41 +742,35 @@ footer {
     .portfolio {
         padding: 50px 50px 50px 50px;
     }
-    .img-portfolio {
-        padding-inline: 35px;
-        flex-direction: column;
-    }
     .card-portfolio {
-        margin-block-end: 35px;
-        max-width: 100%;
+        max-width: 230px;
+        margin: 0 auto;
+    }
+    .card-portfolio img {
+        width: 100%;
     }
     h3.cards {
-        font-size: 25px;
+        font-size: 23px;
     }
     .card-portfolio p {
         line-height: 1.5em;
     }
     p.p2 {
-        font-size: 11px;
+        font-size: 10px;
     }
     .card-button {
-        font-size: 10px;
-        padding: 0.4rem 0.8rem
+        font-size: 9px;
     }
     .show-portfolio a {
-        font-size: 12px;
+        font-size: 11px;
     }
     #team {
         padding: 50px 50px 50px 50px;
-        border-bottom-left-radius: 1000% 10%;
-        border-bottom-right-radius: 1000% 10%;
-    }
-    .team-1 {
-        display: flex;
-        flex-direction: column;
+        border-bottom-left-radius: 600% 10%;
+        border-bottom-right-radius: 600% 10%;
     }
     .team-row {
-        flex-direction: column;
+        flex-direction: row;
         gap: 35px;
     }
     h3.teams {
@@ -772,6 +847,13 @@ footer {
     h1 {
         font-size: 6.6vw;
     }
+    .card-portfolio {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .card-portfolio img {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 389px) {
@@ -783,9 +865,6 @@ footer {
 @media screen and (max-width: 374px) {
     h1 {
         font-size: 6.4vw;
-    }
-    .img-portfolio {
-        padding-inline: 30px;
     }
     h3.cards {
         font-size: 23px;
@@ -824,15 +903,33 @@ footer {
     .portfolio {
         padding: 50px 50px 50px 50px;
     }
-    .img-portfolio {
-        padding-inline: 15px;
+    .card-portfolio {
+        max-width: 170px;
+        margin: 0 auto;
+    }
+    .card-portfolio img {
+        width: 100%;
     }
     h3.cards {
         margin-block-start: 5px;
-        font-size: 20px;
+        font-size: 19px;
+    }
+    p.p2 {
+        font-size: 9px;
+        margin: 0px 15px 15px 15px;
     }
     .card-button {
-        font-size: 10px;
+        font-size: 7px;
+    }
+    .show-portfolio a {
+        font-size: 9px;
+    }
+    .border {
+        height: 170px;
+        width: 170px;
+    }
+    .team-border {
+        max-width: 180px;
     }
     .footer-img img {
         width: 90px
