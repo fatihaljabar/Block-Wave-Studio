@@ -23,7 +23,7 @@ body {
 
 h1 {
     font-family: "Poppins", sans-serif;
-    font-size: 31px;
+    font-size: 30px;
     font-weight: var(--fwblack);
     text-transform: uppercase;
     color: var(--black);
@@ -182,6 +182,7 @@ main #home {
     display: flex;
     width: 100%;
     padding-inline: 100px;
+    gap: 110px;
     margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
@@ -189,11 +190,11 @@ main #home {
 }
 
 .about-deskripsi {
-    max-width: 348px;
+    max-width: 100%;
 }
 
 .img-about img {
-    max-width: 622px;
+    max-width: 100%;
     background-position: center;
     background-size: cover;
     border-radius: 30px;
@@ -502,16 +503,40 @@ footer {
     line-height: 0;
 }
 
-@media screen and (max-width: 1150px) {
-    .about-deskripsi {
-        max-width: 348px;
+@media screen and (max-width: 1440px) {
+    .about-deskripsi h1 {
+        font-size: 3.3vw;
     }
-    .img-about {
-        max-width: 500px;
+}
+
+@media screen and (max-width: 1323px) {
+    .about-deskripsi h1 {
+        font-size: 3.2vw;
     }
-    .img-about img {
+}
+
+@media screen and (max-width: 1307px) {
+    .about-deskripsi h1 {
+        font-size: 3.2vw;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .card-portfolio {
+        max-width: 300px;
+    }
+    .card-portfolio img {
         width: 100%;
     }
+}
+
+@media screen and (max-width: 1203px) {
+    .about-deskripsi h1 {
+        font-size: 3.1vw;
+    }
+}
+
+@media screen and (max-width: 1150px) {
     .card-portfolio {
         max-width: 250px;
     }
@@ -539,6 +564,66 @@ footer {
     }
 }
 
+@media screen and (max-width: 1104px) {
+    .about-deskripsi h1 {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .about-deskripsi h1 {
+        font-size: 3.1vw;
+    }
+    #about {
+        gap: 60px;
+    }
+    .img-about img {
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .card-portfolio {
+        max-width: 230px;
+    }
+    h3.cards {
+        font-size: 25px;
+    }
+    p.p2 {
+        font-size: 11px;
+    }
+    .card-button {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .about-deskripsi h1 {
+        font-size: 3vw;
+    }
+    .ul-footer-1 li a {
+        font-size: 16px;
+    }
+    .ul-sosmed li a {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .card-portfolio {
+        max-width: 220px;
+    }
+    h3.cards {
+        font-size: 24px;
+    }
+    p.p2 {
+        font-size: 11px;
+    }
+    .card-button {
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .navbar-collapse {
         margin-block: 15px;
@@ -546,11 +631,8 @@ footer {
     .navbar-nav {
         gap: 10px;
     }
-    .about-deskripsi {
-        max-width: 280px;
-    }
-    .img-about {
-        max-width: 370px;
+    #about {
+        gap: 30px;
     }
     .img-about img {
         width: 100%;
@@ -600,23 +682,36 @@ footer {
     }
 }
 
-@media screen and (max-width: 835px) {
+@media screen and (max-width: 885px) {
     #about {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
-    .about-deskripsi {
-        margin-block-end: 50px;
-        max-width: 100%;
-    }
-    .img-about {
-        max-width: 100%;
+    .about-deskripsi h1 {
+        font-size: 6.8vw;
     }
     .img-about img {
-        width: 100%;
         border-radius: 30px;
     }
+}
+
+@media screen and (max-width: 865px) {
+    .ul-footer-1 li a {
+        font-size: 14px;
+    }
+    .ul-sosmed li a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .about-deskripsi h1 {
+        font-size: 6.7vw;
+    }
+}
+
+@media screen and (max-width: 835px) {
     h1 {
         font-size: 6.7vw;
         line-height: 1.5em;
@@ -701,6 +796,12 @@ footer {
     }
 }
 
+@media screen and (max-width: 806px) {
+    .about-deskripsi h1 {
+        font-size: 6.6vw;
+    }
+}
+
 @media screen and (max-width: 800px) {
     p.p3 {
         font-size: 13px;
@@ -710,7 +811,85 @@ footer {
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 806px) {
+    .about-deskripsi h1 {
+        font-size: 6.5vw;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .ul-footer-1 li a {
+        font-size: 12px;
+    }
+    .ul-sosmed li a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .about-deskripsi h1 {
+        font-size: 6.4vw;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .about-deskripsi h1 {
+        font-size: 6.3vw;
+    }
+}
+
+@media screen and (max-width: 695px) {
+    .ul-footer-1 li a {
+        font-size: 10px;
+    }
+    .ul-sosmed li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 683px) {
+    .about-deskripsi h1 {
+        font-size: 6.2vw;
+    }
+}
+
+@media screen and (max-width: 659px) {
+    .ul-footer-1 li a {
+        margin-inline-end: 2rem;
+    }
+    .ul-sosmed li a {
+        margin-inline-start: 35px;
+    }
+}
+
+@media screen and (max-width: 657px) {
+    .about-deskripsi h1 {
+        font-size: 6.1vw;
+    }
+}
+
+@media screen and (max-width: 634px) {
+    .about-deskripsi h1 {
+        font-size: 6vw;
+    }
+}
+
+@media screen and (max-width: 619px) {
+    .ul-footer-1 li a {
+        margin-inline-end: 1.5rem;
+    }
+    .ul-sosmed li a {
+        margin-inline-start: 30px;
+    }
+}
+
+@media screen and (max-width: 613px) {
+    .about-deskripsi h1 {
+        font-size: 5.8vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
     .logo img {
         width: 100px;
     }
@@ -727,8 +906,11 @@ footer {
     #about {
         padding: 50px 50px 50px 50px;
     }
+    .about-deskripsi h1 {
+        font-size: 7.4vw;
+    }
     h1 {
-        font-size: 6.8vw;
+        font-size: 7.4vw;
     }
     .about-deskripsi {
         margin-block-end: 25px;
@@ -834,6 +1016,90 @@ footer {
         font-size: 3vw;
         line-height: 1em;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 588px) {
+    .about-deskripsi h1 {
+        font-size: 7.3vw;
+    }
+}
+
+@media screen and (max-width: 553px) {
+    .about-deskripsi h1 {
+        font-size: 7.2vw;
+    }
+}
+
+@media screen and (max-width: 521px) {
+    .about-deskripsi h1 {
+        font-size: 7.1vw;
+    }
+}
+
+@media screen and (max-width: 492px) {
+    .about-deskripsi h1 {
+        font-size: 7vw;
+    }
+}
+
+@media screen and (max-width: 466px) {
+    .about-deskripsi h1 {
+        font-size: 6.9vw;
+    }
+}
+
+@media screen and (max-width: 443px) {
+    .about-deskripsi h1 {
+        font-size: 6.8vw;
+    }
+}
+
+@media screen and (max-width: 422px) {
+    .about-deskripsi h1 {
+        font-size: 6.7vw;
+    }
+}
+
+@media screen and (max-width: 403px) {
+    .about-deskripsi h1 {
+        font-size: 6.6vw;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .about-deskripsi h1 {
+        font-size: 6.5vw;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .about-deskripsi h1 {
+        font-size: 6.4vw;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .about-deskripsi h1 {
+        font-size: 6.3vw;
+    }
+}
+
+@media screen and (max-width: 341px) {
+    .about-deskripsi h1 {
+        font-size: 6.2vw;
+    }
+}
+
+@media screen and (max-width: 329px) {
+    .about-deskripsi h1 {
+        font-size: 6.1vw;
+    }
+}
+
+@media screen and (max-width: 317px) {
+    .about-deskripsi h1 {
+        font-size: 6vw;
     }
 }
 
