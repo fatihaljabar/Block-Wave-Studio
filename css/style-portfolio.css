@@ -1055,20 +1055,27 @@ footer {
     .navbar {
         padding-inline: 20px;
     }
+    .portfolio {
+        padding-inline: 30px;
+    }
+    footer {
+        padding-inline: 15px;
+    }
+    .card-portfolio {
+        width: 170px;
+    }
     .img-portfolio {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 35px;
+        gap: 30px 10px;
+        justify-content: space-evenly;
     }
     h3.cards {
-        font-size: 20px;
+        font-size: 18px;
     }
     p.p2 {
-        font-size: 9px;
+        font-size: 8px;
     }
     .card-button {
-        font-size: 7px;
+        font-size: 6px;
     }
     p.p3 {
         word-spacing: 3px;
@@ -1088,6 +1095,9 @@ footer {
 }
 
 @media screen and (max-width: 431px) {
+    h1 {
+        font-size: 4vw;
+    }
     .footer-img img {
         width: 110px;
     }
@@ -1110,6 +1120,8 @@ footer {
         font-size: 12px;
     }
 }
+
+@media screen and (max-width: 409px) {}
 
 @media screen and (max-width: 390px) {
     p.p3 {
