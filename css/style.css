@@ -100,6 +100,7 @@ p.p3 {
 .navbar {
     width: 100%;
     padding-block: 1rem;
+    padding-inline: 100px;
 }
 
 span.navbar-toggler-icon {
@@ -121,7 +122,6 @@ span.navbar-toggler-icon {
 }
 
 .collapse li a {
-    padding: 0.3rem 0.6rem;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: var(--fwblack);
@@ -191,6 +191,10 @@ main #home {
 
 .about-deskripsi {
     max-width: 100%;
+}
+
+.about-deskripsi h1 {
+    font-size: 3.3vw;
 }
 
 .img-about img {
@@ -503,12 +507,6 @@ footer {
     line-height: 0;
 }
 
-@media screen and (max-width: 1440px) {
-    .about-deskripsi h1 {
-        font-size: 3.3vw;
-    }
-}
-
 @media screen and (max-width: 1323px) {
     .about-deskripsi h1 {
         font-size: 3.2vw;
@@ -582,7 +580,10 @@ footer {
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
+    .navbar {
+        padding-inline: 50px;
+    }
     .card-portfolio {
         max-width: 230px;
     }
@@ -609,7 +610,13 @@ footer {
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
+    .navbar-collapse {
+        margin-block: 15px;
+    }
+    .navbar-nav {
+        gap: 10px;
+    }
     .card-portfolio {
         max-width: 220px;
     }
@@ -625,12 +632,6 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-    .navbar-collapse {
-        margin-block: 15px;
-    }
-    .navbar-nav {
-        gap: 10px;
-    }
     #about {
         gap: 30px;
     }
@@ -665,9 +666,6 @@ footer {
     #team {
         border-bottom-left-radius: 120% 10%;
         border-bottom-right-radius: 120% 10%;
-    }
-    .team-row {
-        gap: 60px 40px;
     }
     .border {
         height: 180px;
@@ -1104,6 +1102,12 @@ footer {
 }
 
 @media screen and (max-width: 427px) {
+    .navbar {
+        padding-inline: 10px;
+    }
+    .collapse li a {
+        padding: 0;
+    }
     h1 {
         font-size: 6.7vw;
     }
@@ -1149,10 +1153,6 @@ footer {
 @media screen and (max-width: 359px) {
     .logo img {
         width: 90px;
-    }
-    .collapse li a {
-        font-size: 10px;
-        margin-block-end: 10px;
     }
     .navbar-toggler {
         padding: 0.1rem 0.3rem;
