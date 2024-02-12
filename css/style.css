@@ -235,6 +235,7 @@ main #home {
     background: #ffffff;
     box-shadow: 5px 5px 10px #939496, -5px -5px 10px #ffffff;
     transition: all 0.3s;
+    width: 320px;
 }
 
 .card-portfolio:hover {
@@ -244,6 +245,7 @@ main #home {
 
 .card-portfolio img {
     border-radius: 20px 20px 0px 0px;
+    width: 100%;
 }
 
 .card-portfolio p {
@@ -542,7 +544,7 @@ footer {
         width: 100%;
     }
     h3.cards {
-        font-size: 29px;
+        font-size: 27px;
     }
     p.p2 {
         font-size: 12px;
@@ -652,7 +654,7 @@ footer {
         width: 100%;
     }
     h3.cards {
-        font-size: 25px;
+        font-size: 21px;
     }
     p.p2 {
         font-size: 9px;
@@ -725,8 +727,8 @@ footer {
         margin-block-end: 25px;
     }
     h3.cards {
-        font-size: 24px;
-        margin-block-start: 10px;
+        font-size: 20px;
+        margin-block-start: 5px;
     }
     .card-portfolio p {
         max-width: 100%;
@@ -1059,6 +1061,12 @@ footer {
     }
 }
 
+@media screen and (max-width: 413px) {
+    h3.cards {
+        font-size: 21px;
+    }
+}
+
 @media screen and (max-width: 403px) {
     .about-deskripsi h1 {
         font-size: 6.6vw;
@@ -1136,10 +1144,7 @@ footer {
     h1 {
         font-size: 6.4vw;
     }
-    h3.cards {
-        font-size: 23px;
-    }
-    p.p2 {
+    */ p.p2 {
         font-size: 11px;
     }
     .show-portfolio a {
@@ -1178,7 +1183,7 @@ footer {
     }
     h3.cards {
         margin-block-start: 5px;
-        font-size: 19px;
+        font-size: 17px;
     }
     p.p2 {
         font-size: 9px;
