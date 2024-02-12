@@ -157,7 +157,7 @@ main {
     gap: 80px 87px;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .card-portfolio {
