@@ -355,7 +355,7 @@ button.card-button:hover {
 }
 
 .img-1 {
-    background-image: url(img/img-profile.png);
+    background-image: url(../img/img-profile.png);
     width: 100%;
     background-position: center;
     background-size: cover;
