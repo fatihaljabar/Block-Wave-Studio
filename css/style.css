@@ -509,6 +509,24 @@ footer {
     line-height: 0;
 }
 
+@media screen and (max-width: 1890px) {
+    .team-row {
+        gap: 60px 230px;
+    }
+}
+
+@media screen and (max-width: 1410px) {
+    .team-row {
+        gap: 60px 110px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .team-row {
+        gap: 60px 100px;
+    }
+}
+
 @media screen and (max-width: 1323px) {
     .about-deskripsi h1 {
         font-size: 3.2vw;
